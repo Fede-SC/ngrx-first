@@ -6,7 +6,7 @@ export const init = createAction(
 
 export const set = createAction(
   '[Counter] Set',
-  props<{value: number}>()
+  props<{value: number}>(),
 );
 
 export const increment = createAction(

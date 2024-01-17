@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+
+import { init } from './store/counter.actions';
 
 import { CounterOutputComponent } from './counter-output/counter-output.component';
 import { CounterControlsComponent } from './counter-controls/counter-controls.component';
-import { Store } from '@ngrx/store';
-import { init } from './store/counter.actions';
 
 @Component({
   selector: 'app-root',

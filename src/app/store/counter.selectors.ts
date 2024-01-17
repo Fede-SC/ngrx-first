@@ -1,7 +1,7 @@
-import { createSelector, select } from "@ngrx/store";
+import { createSelector } from '@ngrx/store';
 
-export const selectCount = (state: {counter: number}) => state.counter;
+export const selectCount = (state: { counter: number }) => state.counter;
 export const selectDoubleCount = createSelector(
-    selectCount,
-    (state: number) => state * 2
+  selectCount,
+  (state) => state * 2
 );
